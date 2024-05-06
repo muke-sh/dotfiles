@@ -1,6 +1,6 @@
 ### dotfiles
 
-This repository contains your dotfiles, which are configuration files starting with a dot (e.g., .bashrc, .vimrc, etc.).
+This repository contains my dotfiles, which are configuration files starting with a dot (e.g., .bashrc, .vimrc, etc.).
 
 ### Installing Stow
 
