@@ -3,6 +3,9 @@ return {
 		"hrsh7th/cmp-nvim-lsp"
 	},
 	{
+		"hrsh7th/vim-vsnip"
+	},
+	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
@@ -19,7 +22,7 @@ return {
 				snippet = {
 					-- REQUIRED - you must specify a snippet engine
 					expand = function(args)
-						vim.fn["vsnip#anonymous"](args.body)
+						-- vim.fn["vsnip#anonymous"](args.body)
 						require('luasnip').lsp_expand(args.body)
 					end,
 				},
