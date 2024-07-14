@@ -26,7 +26,7 @@ return {
 		end
 
 
-		vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, {})
-		vim.keymap.set("n", "<F5>", dap.continue, {})
+		vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint, {desc="Debug: Toggle breakpoint"})
+		vim.keymap.set("n", "<F5>", dap.continue, {desc= "Debug: Start/Continue"})
 	end,
 }
