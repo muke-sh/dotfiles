@@ -1,16 +1,16 @@
 return {
 	{
-		"hrsh7th/cmp-nvim-lsp"
+		"hrsh7th/cmp-nvim-lsp",
 	},
 	{
-		"hrsh7th/vim-vsnip"
+		"hrsh7th/vim-vsnip",
 	},
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
-			"rafamadriz/friendly-snippets"
-		}
+			"rafamadriz/friendly-snippets",
+		},
 	},
 	{
 		"hrsh7th/nvim-cmp",
@@ -23,7 +23,7 @@ return {
 					-- REQUIRED - you must specify a snippet engine
 					expand = function(args)
 						-- vim.fn["vsnip#anonymous"](args.body)
-						require('luasnip').lsp_expand(args.body)
+						require("luasnip").lsp_expand(args.body)
 					end,
 				},
 				window = {
@@ -39,11 +39,10 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-					{ name = 'luasnip' }, -- For luasnip users.
-					}, {
-						{ name = "buffer" },
+					{ name = "luasnip" }, -- For luasnip users.
+					{ name = "buffer" },
 				}),
 			})
 		end,
-	}
+	},
 }
